@@ -189,12 +189,7 @@ hs = { i for i in range(6) if i % 2 == 1}
 >>> {1, 3, 5}
 ```
 
-#### Stacks:
-```py
-
-```
-
-#### Queues (Double Ended Queue):
+#### Double Ended Queue (FIFO):
 ```py
 # O(1) - insert
 queue = collections.deque()
@@ -219,6 +214,39 @@ queue.pop()
 # O(n) - list to queue
 queue = deque([1, 2, 3])
 >>> deque([1, 2, 3])
+```
+
+#### Stacks (LIFO):
+```py
+# Using Array
+stack = []
+  
+# O(1) - push to stack
+stack.append('a')
+stack.append('b')
+stack.append('c')
+print(stack)
+>>> ['a', 'b', 'c']
+  
+#  O(1) - pop from stack
+print(stack.pop())
+>>> ['c']
+
+# Using deque with append() and pop()
+queue = collections.deque()
+queue.append(1)
+queue.append(2)
+queue.pop()
+print(queue)
+>>> deque([1])
+
+# Using deque with appendleft() and popleft()
+queue = collections.deque()
+queue.appendleft(1)
+queue.appendleft(2)
+queue.popleft()
+print(queue)
+>>> deque([1])
 ```
 
 #### Heaps:
