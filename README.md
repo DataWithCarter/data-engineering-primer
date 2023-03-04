@@ -1,4 +1,11 @@
-# data-engineering-primer
+# The Data Engineering Primer
+## Motivation
+
+> Learn enough python/ scala/ sql so you can practice with leetcode questions daily
+>
+> Teach you the fundamentals of popular data engineering tools
+
+## Index:
 * [Python](#python)
 * [Scala](#scala)
 * [MySQL](#mysql)
