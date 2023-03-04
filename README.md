@@ -11,10 +11,10 @@
 * [MySQL](#mysql)
 * [Apache Spark](#apache-spark)
 * [Apache Airflow](#apache-airflow)
+* [Apache Kafka](#apache-kafka)
 * [Apache Flink](#apache-flink)
 
 ## Python
-
 #### Variables:
 ```py
 # method 1: single assignment
