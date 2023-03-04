@@ -21,7 +21,7 @@ x, y = 1, False
 x = y = 1
 ```
 
-#### Strings (immutable):
+#### Strings (Immutable):
 ```py
 s = "Hello"
 s += ', World!'
@@ -191,9 +191,10 @@ hs = { i for i in range(6) if i % 2 == 1}
 
 #### Stacks:
 ```py
+
 ```
 
-#### Queues (double ended queue):
+#### Queues (Double Ended Queue):
 ```py
 # O(1) - insert
 queue = collections.deque()
@@ -255,8 +256,25 @@ minVal = maxHeap[0] # min @ last index
 maxVal = maxHeap[-1] # max @ index 0
 ```
 
-#### Tuples
+#### Tuples (Immutable)
 ```py
+tup1 = (1, 2, 3, 4)
+print(tup[1])
+>>> 2
+print(tup[-1])
+>>> 4
+
+# Unlike arrays they can be a Key in a hashmap or hashset!!
+hm = { (1,1): 1, (1,2): 2, (1,3): 3}
+print(myMap[(1,2)])
+>>> 2
+
+hs = set()
+hs.add((1,1))
+hs.add((1,2))
+hs.add((1,3))
+print(hs)
+>>> {(1, 1), (1, 2), (1, 3)}
 ```
 
 #### Functions:
