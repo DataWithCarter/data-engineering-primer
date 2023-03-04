@@ -5,7 +5,6 @@
 * [Apache Spark](#apache-spark)
 * [Apache Airflow](#apache-airflow)
 * [Apache Flink](#apache-flink)
-* [Apache Kafka](#apache-kafka)
 
 ## Python
 
@@ -197,7 +196,5 @@ scooby.speak()
 ## Apache Spark
 
 ## Apache Airflow
-
-## Apache Kafka
 
 ## Apache Flink
