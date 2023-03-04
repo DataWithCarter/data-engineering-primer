@@ -24,23 +24,42 @@ x = y = 1
 ### Strings (immutable):
 ```py
 s = "Hello"
-s += ', World!' # "Hello, World!"
+s += ', World!'
+>>> "Hello, World!"
 
 # For more complex formatting...
-s = 'Hi {} how is your {} going?'.format('Tiffany', 'project') # Hi Tiffany how is your project going?
+s = 'Hi {} how is your {} going?'.format('Tiffany', 'project')
+>>> Hi Tiffany how is your project going?
 
 # String --> Integer
-int("1000") # 1000
+int("1000")
+>>> 1000
 
 # Integer --> String
-str(1000) # "1000"
+str(1000)
+>>> "1000"
 
 # Array --> String
 arrayOfStrings = ['a', 'b', 'c']
-newString = ''.join(arrayOfStrings) # 'abc'
+newString = ''.join(arrayOfStrings)
+>>> 'abc'
+
+# 2-D Array --> 1-D Array of strings
+2dArray = [['a', 'b', 'c'], ['a', 'b', 'c']]
+arrayOfStrings = ["".join(row) for row in 2dArray]
+>>> ['abc', 'abc']
 
 # Grab ASCII value of character
-ord("a") # 97
+ord("a")
+>>> 97
+
+# Convert Binary String to integer equivalent
+integer_representation = int("1000", 2)
+>>> 8
+
+# Integer to Binary
+format(3,'b')
+>>> '11'
 ```
 
 ### Arrays:
@@ -65,6 +84,7 @@ arr.insert(1, 1) # [0, 1, 1, 2, 3, 4] <-- at the index 1, add 1
 arr.remove(1) # [0, 1, 2, 3, 4] <-- removes the first instance of the value '1' in the array
 del a[3] # [0, 1, 2, 4] <-- removes the value at the specified index
 del a[1:-1] # [0, 4] <-- removes values from 2nd index up to the second last index
+arr += [5, 6, 7] # [0, 4, 5, 6, 7] <-- concatenate arrays
 
 # Update Cells
 arr = [1, 3, 2, 4]
@@ -79,10 +99,17 @@ arr.reverse() # [4, 2, 3, 1] <-- simply reverses the array
 arr.sort() # [1, 2, 3, 4] <-- sorts in increasing order
 arr.sort(reverse=True) # [4, 3, 2, 1] <-- sorts in decreasing order
 
+newArray = arr[::-1] # [4, 2, 3, 1] <-- (reverse but not in place)
+for i in range(len(mat)): # reverse each row in matrix
+  mat[i] = mat[i][::-1]
+
 # Custom Sorting
 arr = ['a', 'ccc', 'bb']
 arr.sort(key=lambda x: len(x)) # ['a', 'bb', 'ccc']
 arr.sort(key=lambda x: - len(x)) # ['ccc', 'bb', 'a'] <-- add a '-' to do it in reverse
+ 
+arr = [[1, 2], [5, 4], [1, 4]]
+arr.sort(key=lambda x: (-x[0], x[1])) # [[5, 4], [1, 2], [1, 4]]
 ```
 
 #### Functions:
@@ -111,6 +138,13 @@ if 1 <= num <= 2:
 # Check if value is in a list
 if name in ['john', 'cathy', 'diego']:
   # ...
+
+# Compare lists
+arr1, arr2 = [1, 2, 3], [2, 3, 4]
+if arr1 == [1, 2, 3]:
+  return True
+elif arr1 == arr2:
+  return False
 
 # One-liners
 result = 1000 if score >= 100 else 5
