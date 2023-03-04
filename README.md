@@ -21,7 +21,7 @@ x, y = 1, False
 x = y = 1
 ```
 
-### Strings (immutable):
+#### Strings (immutable):
 ```py
 s = "Hello"
 s += ', World!'
@@ -62,7 +62,7 @@ format(3,'b')
 >>> '11'
 ```
 
-### Arrays:
+#### Arrays:
 ```py
 # Initialize
 arr = [0, 1, 2, 3, 4]
@@ -163,6 +163,102 @@ counter.most_common() # returns list of sorted keys ordered by occurences in des
 >>> [(1, 4), (2, 2), (3, 1)]
 ```
 
+#### HashSet
+```py
+# O(1) - Add/ remove from set
+hs = set()
+hs.add(1)
+hs.add(2)
+hs.remove(1)
+>>> {2, 3}
+
+# O(1) - Get length
+print(len(mySet))
+>>> 2
+
+# O(1) - Check if a value is in the set
+if 5 in hs:
+  // do something ...
+
+# O(n) - list to set
+hs = set([1, 2, 3, 4, 5])
+>>> {1, 2, 3, 4, 5}
+
+# O(n) - Set comprehension with conditional statement
+hs = { i for i in range(6) if i % 2 == 1}
+>>> {1, 3, 5}
+```
+
+#### Stacks:
+```py
+```
+
+#### Queues (double ended queue):
+```py
+# O(1) - insert
+queue = collections.deque()
+queue.append(1)
+queue.append(2)
+queue.append(3)
+>>> deque([1, 2, 3])
+
+# O(1) - removal
+queue.popleft()
+>>> deque([2, 3])
+
+# You can also append to the left, and pop from the right...
+queue = deque()
+queue.appendleft(1)
+queue.appendleft(2)
+>>> deque([2, 1])
+
+queue.pop()
+>>> deque([1])
+
+# O(n) - list to queue
+queue = deque([1, 2, 3])
+>>> deque([1, 2, 3])
+```
+
+#### Heaps:
+```py
+# nlog(n) - array --> heap
+minHeap = [2, 1, 3, 5, 4]
+heapq.heapify(minHeap)
+>>> [1, 2, 3, 4, 5]
+
+# log(n) - for each individual push to heap (nlog(n) for them all)
+minHeap = []
+heapq.heappush(minHeap, 3)
+heapq.heappush(minHeap, 1)
+heapq.heappush(minHeap, 2)
+>>> [1, 2, 3]
+
+# log(n) - for each individual pop from heap (nlog(n) for them all)
+while len(minHeap):
+    heapq.heappop(minHeap)
+>>> 1, 2, 3
+
+# O(1) - index lookup
+minVal = minHeap[0] # min @ index 0
+maxVal = minHeap[-1] # max @ last index
+
+# For max heaps the workaround is to negate your values
+# Remember to negate your values once again after popping!
+maxHeap = []
+heapq.heappush(maxHeap, -3)
+heapq.heappush(maxHeap, -1)
+heapq.heappush(maxHeap, -2)
+>>> -3, -2, -1
+
+minVal = maxHeap[0] # min @ last index
+maxVal = maxHeap[-1] # max @ index 0
+```
+
+#### Tuples
+```py
+```
+
 #### Functions:
 ```py
 def addOne(num):
@@ -172,7 +268,7 @@ def addOne(num):
 addOne(1) # returns 2
 ```
 
-### Conditional Statements:
+#### Conditional Statements:
 ```py
 # Standard If Statement
 if num = 1:
