@@ -6,6 +6,8 @@
 > Teach you the fundamentals of popular data engineering tools
 
 ## Index:
+* [CLI & Vim](#cli-vim)
+* [Git](#git)
 * [Python](#python)
 * [Scala](#scala)
 * [MySQL](#mysql)
