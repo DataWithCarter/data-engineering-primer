@@ -54,7 +54,7 @@ ord("a")
 >>> 97
 
 # Convert Binary String to integer equivalent
-integer_representation = int("1000", 2)
+int("1000", 2)
 >>> 8
 
 # Integer to Binary
@@ -110,6 +110,57 @@ arr.sort(key=lambda x: - len(x)) # ['ccc', 'bb', 'a'] <-- add a '-' to do it in 
  
 arr = [[1, 2], [5, 4], [1, 4]]
 arr.sort(key=lambda x: (-x[0], x[1])) # [[5, 4], [1, 2], [1, 4]]
+```
+
+#### HashMap
+```py
+nameToAge = {'Diego': 32, 'Evelyn': 22, 'Thomas': 29}
+nameToAge['Jayden'] = 45
+nameToAge.pop('Thomas')
+>>> {'Diego': 32, 'Evelyn': 22, 'Jayden': 45}
+
+# Get length
+len(nameToAge)
+>>> 3
+
+# Check if key is in hashmap
+if 'Murray' not in nameToAge:
+  nameToAge['Murray'] = 60
+
+# Build HashMap with dict comprehension
+hm = { i:i*10 for i in range(10) if i % 2 == 0}
+>>> {0: 0, 2: 20, 4: 40, 6: 60, 8: 80}
+
+# Hashmaps with loops:
+for name in nameToAge:
+  # 'Diego', 'Evelyn', 'Jayden', 'Murray'
+
+for age in nameToAge.values():
+    # 32, 22, 45, 60
+
+for name, age in myMap.items():
+  # 'Diego' 32, 'Evelyn' 22, 'Jayden' 45, 'Murray' 60
+  
+# Clear an entire HashMap:
+nameToAge.clear()
+>>> {}
+
+# Default dict: Used to prevent errors when incrementing/ adding to hashmap as there will be default value
+graph = collections.defaultdict(list) # default value is []
+graph[0].append(1)
+graph[0].append(2)
+>>> {0: [1, 2]}
+
+ages = collections.defaultdict(int) # default value is 0
+ages['alice']+= 1
+>>> {'alice': 1}
+
+# Counter: Used to easily count the number of occurences
+counter = collections.Counter([1, 1, 2, 1, 2, 1, 3])
+>>> {1:4, 2:2, 3:1}
+
+counter.most_common() # returns list of sorted keys ordered by occurences in descending order
+>>> [(1, 4), (2, 2), (3, 1)]
 ```
 
 #### Functions:
