@@ -1,9 +1,11 @@
 # The Data Engineering Primer
 ## Motivation
 
-> Learn enough python/ scala/ sql so you can practice with leetcode questions daily
+> Teach you enough python/ scala/ sql so you can routinely practice leetcode questions
 >
-> Teach you the fundamentals of popular data engineering tools
+> Equip you with the fundamentals of popular data engineering tools
+> 
+> To be your project partner throughout a Data Engineering project!
 
 ## Index:
 * [CLI & Vim](#cli-vim)
