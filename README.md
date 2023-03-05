@@ -15,6 +15,8 @@
 * [Apache Airflow](#apache-airflow)
 * [Apache Kafka](#apache-kafka)
 * [Apache Flink](#apache-flink)
+* [Amazon Web Services (AWS)](#aws)
+* [Build a Data Pipeline Project](#data-pipeline-project)
 
 ## Python
 #### Variables:
