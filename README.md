@@ -3,19 +3,19 @@
   - [CLI \& Vim](#cli--vim)
   - [Git](#git)
   - [Python](#python)
-      - [Variables:](#variables)
-      - [Functions:](#functions)
-      - [Conditional Statements:](#conditional-statements)
-      - [Loops:](#loops)
-      - [Strings (Immutable):](#strings-immutable)
-      - [Arrays:](#arrays)
+      - [Variables \& Math](#variables--math)
+      - [Functions](#functions)
+      - [Conditional Statements](#conditional-statements)
+      - [Loops](#loops)
+      - [Strings (Immutable)](#strings-immutable)
+      - [Arrays](#arrays)
       - [HashMap](#hashmap)
       - [HashSet](#hashset)
-      - [Double Ended Queue (FIFO):](#double-ended-queue-fifo)
-      - [Stacks (LIFO):](#stacks-lifo)
-      - [Heaps:](#heaps)
+      - [Double Ended Queue (FIFO)](#double-ended-queue-fifo)
+      - [Stacks (LIFO)](#stacks-lifo)
+      - [Heaps](#heaps)
       - [Tuples (Immutable)](#tuples-immutable)
-      - [Classes:](#classes)
+      - [Classes](#classes)
   - [MySQL](#mysql)
   - [Apache Spark (PySpark)](#apache-spark-pyspark)
   - [Apache Airflow](#apache-airflow)
@@ -23,20 +23,21 @@
   - [Great Expecations](#great-expecations)
   - [Data Build Tool (DBT)](#data-build-tool-dbt)
   - [Scala](#scala)
-      - [The Fundamentals: variables, comments, printing, and math :D](#the-fundamentals-variables-comments-printing-and-math-d)
+      - [Variables \& Math](#variables--math-1)
       - [Conditional Statements](#conditional-statements-1)
       - [Loops](#loops-1)
+      - [Strings](#strings)
       - [Lists](#lists)
-      - [Functions](#functions-1)
+      - [Procedures \& Functions](#procedures--functions)
   - [Apache Kafka](#apache-kafka)
   - [Apache Flink](#apache-flink)
-  - [Databricks](#databricks)
-  - [Kubernetes](#kubernetes)
+  - [Databricks (coming soon)](#databricks-coming-soon)
+  - [Kubernetes (coming soon)](#kubernetes-coming-soon)
 
 ## CLI & Vim
 ## Git
 ## Python
-#### Variables:
+#### Variables & Math
 ```py
 # method 1: single assignment
 x = 1
@@ -49,7 +50,7 @@ x, y = 1, False
 x = y = 1
 ```
 
-#### Functions:
+#### Functions
 ```py
 def addOne(num):
   newNum = num + 1
@@ -58,7 +59,7 @@ def addOne(num):
 addOne(1) # returns 2
 ```
 
-#### Conditional Statements:
+#### Conditional Statements
 ```py
 # Standard If Statement
 if num = 1:
@@ -85,7 +86,7 @@ match score:
     print("Your score was neither 1000 nor 500. Try again!")
 ```
 
-#### Loops:
+#### Loops
 ```py
 # while-loop
 i = 0
@@ -104,7 +105,7 @@ for i in range(3, -1, -1): # define start, end (non-inclusive), decrement amount
   print(i) # 3, 2, 1, 0
 ```
 
-#### Strings (Immutable):
+#### Strings (Immutable)
 ```py
 s = "Hello"
 s += ', World!'
@@ -145,7 +146,7 @@ format(3,'b')
 >>> '11'
 ```
 
-#### Arrays:
+#### Arrays
 ```py
 # Initialize
 arr = [0, 1, 2, 3, 4]
@@ -326,7 +327,7 @@ hs = { i for i in range(6) if i % 2 == 1}
 >>> {1, 3, 5}
 ```
 
-#### Double Ended Queue (FIFO):
+#### Double Ended Queue (FIFO)
 ```py
 # O(1) - insert
 queue = collections.deque()
@@ -353,7 +354,7 @@ queue = deque([1, 2, 3])
 >>> deque([1, 2, 3])
 ```
 
-#### Stacks (LIFO):
+#### Stacks (LIFO)
 ```py
 # Using Array
 stack = []
@@ -386,7 +387,7 @@ print(queue)
 >>> deque([1])
 ```
 
-#### Heaps:
+#### Heaps
 ```py
 # nlog(n) - array --> heap
 minHeap = [2, 1, 3, 5, 4]
@@ -442,7 +443,7 @@ print(hs)
 >>> {(1, 1), (1, 2), (1, 3)}
 ```
 
-#### Classes:
+#### Classes
 ```py
 class Dog:
   # note: this is a python 'magic method' used to indicate the constructor
@@ -482,7 +483,7 @@ scooby.speak()
 ## Data Build Tool (DBT)
 
 ## Scala
-#### The Fundamentals: variables, comments, printing, and math :D
+#### Variables & Math
 Scala can automatically figure out what data type your variable is based on what type of data you're storing in the variable. 
 
 ```scala
@@ -506,6 +507,10 @@ val val1 = "I cannot be changed!"a # immutable
 // Print something to the screen (great for debugging too!)
 println("Hello, Everyone!")
 >>> "Hello, Everyone"
+
+// Put import statements at the top of your file to use pre-made code!
+import math._ /// use _ to specify that you want everything in the library
+import java.io.PrintWriter // continue to use the '.'s to specify granular resources
 ```
 #### Conditional Statements
 ```scala
@@ -558,6 +563,31 @@ for (i <- 1 until 10) // note: 'until' is non-inclusive
 >>> 1
 >>> 2
 ```
+
+#### Strings
+```scala
+// Define a string
+var myString = "ABC"
+
+// Concatenate Strings:
+myString.concat(" DEFG") // note: modifies in-place
+print(myString)
+>>> "ABC DEFG"
+
+// Or just use a '+'
+myString += ' HIJK'// note does not modify the string in place you neeed the '=' sign
+print(myString)
+>>> "ABC DEFG HIJK"
+
+// Check equality using .equals() method
+print(myString.equals("ABC DEFG HIJK"))
+>>>> true
+
+// Convert String --> Array/ list
+var myArray = myString.toArray
+>>> ["A", "B", "C", " ", "D", "E", ......, "J", "K"]
+```
+
 #### Lists
 ```scala
 // create a list
@@ -610,19 +640,52 @@ for ( i <- 1 to 10) {
 
 ```
 
-#### Functions
+#### Procedures & Functions
+- Procedures - do not return a value
+- Functions - do return a value
 ```scala
-def doSomething() {
+// Simple procedure with no arguments or return value
+def doSomething() : Unit = {
   println("I'm doing something!!")
 }
 
-doSomething()
+doSomething() // Call  the procedure
+
+// You can specify the argument and return value data types
+// Note you can also specify the default values of 1 and 2
+def myFunction (num1: Int = 1, num2: Int = 2) : Int = {
+  return num1 + num2 // note: the 'return' keyword is not actually necessary!
+}
+
+// With no arguments specified - the default values are used
+print(myFunction())
+>>> 3
+
+// Override the default values by specifying all arguments
+print(myFunction(5, 5))
+>>> 10
+
+// You can specify a specific value like so
+print(myFunction(num2 = 1))
+>>> 2
+
+// Handling variable number of arguments
+def calculateSum(args: Int*) : Int = {
+  var sum : Int = 0
+  for (num <- args) {
+    sum += num
+  }
+  sum
+}
+
+print(calculateSum(1,2,3,4,5))
+>>> 15
 ```
 
 ## Apache Kafka
 
 ## Apache Flink
 
-## Databricks
+## Databricks (coming soon)
 
-## Kubernetes
+## Kubernetes (coming soon)
