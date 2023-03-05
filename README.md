@@ -449,7 +449,31 @@ scooby.speak()
 ```
 
 ## Scala
+#### The Fundamentals: variables, comments, printing, and math :D
+Scala can automatically figure out what data type your variable is based on what type of data you're storing in the variable. 
 
+```scala
+// Variables defined by 'var' can be changed!
+var var1 = "I can be changed!"!  # mutable
+
+// Values defined by 'val' can never be changed!
+val val1 = "I cannot be changed!"a # immutable
+
+// If you haven't noticed yet use '//' to make single line comments!!
+
+/*
+  To do
+  multi-line
+  comments
+
+  ...
+  do this (note the '/*' around this comment)
+*/
+
+// Print something to the screen (great for debugging too!)
+println("Hello, Everyone!")
+>>> "Hello, Everyone"
+```
 ## MySQL
 
 ## Apache Spark
