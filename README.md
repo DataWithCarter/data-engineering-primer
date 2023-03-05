@@ -1,9 +1,9 @@
 # The Data Engineering Primer
 - [The Data Engineering Primer](#the-data-engineering-primer)
-  - [CLI \& Vim](#cli--vim)
-      - [CLI](#cli)
+  - [CLI, \& Vim, \& Git](#cli-vim-git)
+      - [Command Line](#cli)
       - [Vim as a text editor](#vim-as-a-text-editor)
-  - [Git](#git)
+      - [Git](#git)
   - [Python](#python)
       - [Variables \& Math](#variables--math)
       - [Functions](#functions)
@@ -34,8 +34,8 @@
   - [Apache Kafka](#apache-kafka)
   - [Apache Flink](#apache-flink)
 
-## CLI & Vim
-#### CLI
+## CLI, Vim, & Git
+#### Command Line
 
 **Vim Terminal Command**
 Another popular terminal command is `vim`.
@@ -60,7 +60,7 @@ I learned VIM simply by practicing one or two new key shortcuts on LeetCode ever
 
 It's totally not necessary to dive deep into vim. I just wished I had known earlier it can be used to save you a ton of time with all of its key shortcuts!
 
-## Git
+#### Git
 
 ## Python
 #### Variables & Math
