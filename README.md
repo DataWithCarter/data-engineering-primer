@@ -1,9 +1,8 @@
 # The Data Engineering Primer
 - [The Data Engineering Primer](#the-data-engineering-primer)
   - [CLI \& Vim](#cli--vim)
-      - [Basic Commands](#basic-commands)
-      - [Vim Terminal Command](#vim-terminal-command)
-      - [Vim for key-shortcuts](#vim-for-key-shortcuts)
+      - [CLI](#cli)
+      - [Vim as a text editor](#vim-as-a-text-editor)
   - [Git](#git)
   - [Python](#python)
       - [Variables \& Math](#variables--math)
@@ -36,9 +35,9 @@
   - [Apache Flink](#apache-flink)
 
 ## CLI & Vim
-#### Basic Commands
+#### CLI
 
-#### Vim Terminal Command
+**Vim Terminal Command**
 Another popular terminal command is `vim`.
 
 Vim allows you to update and modify your files in the command line! Just navigate to the file you want to update and type `vim file_name.<file-extension>`. If that file doesn't exist in that directory it'll create it!
@@ -52,14 +51,17 @@ There's a ton you can do with vim and I recommended learning by:
 2. Watch Free Code Camp's 1 hour Vim tutorial!
 3. Of course anything that looks helpful to you and appears beginner friendly!
 
-#### Vim for key-shortcuts
+#### Vim as a text editor
 What you'll soon come to find is that vim is not only to update files in the command-line. 
 
-It's actually an incredibly powerful text editor that you can use in your favourite IDEs (i.e., VSCode) and even on LeetCode and a lot of other coding sites!
+It's actually an incredibly powerful text editor that you can use in your favourite IDEs (i.e., VSCode) and even on LeetCode and a lot of other coding sites! There's even a community of developers who choose to only use replace IDEs entirely with VIM (along with many open-source plugins to make VIM even more powerful).
 
-I learned VIM by simply practicing one or two new shortcuts on leetcode everyday. It adds up trust me!!
+I learned VIM simply by practicing one or two new key shortcuts on LeetCode everyday (they have a VIM setting you can turn on). It adds up trust me!!
+
+It's totally not necessary to dive deep into vim. I just wished I had known earlier it can be used to save you a ton of time with all of its key shortcuts!
 
 ## Git
+
 ## Python
 #### Variables & Math
 ```py
