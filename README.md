@@ -492,6 +492,39 @@ val score = 300
 var result = if (score >= 250) "You won!" else "Try again!"
 >>> "You won!"
 ```
+
+#### Loops
+```scala
+// while loop
+i = 0
+while (i<3) {
+  println(i)
+  i+=1
+}
+>>> 0
+>>> 1
+>>> 2
+
+// do-while loop (enters loop at least once)
+i = 0
+do {
+  println(i)
+  i+=1
+} while (i == -1)
+>>> 0
+
+// For-loop
+for (i <- 1 to 3) // note: 'to' is inclusive
+  println(i)
+>>> 1
+>>> 2
+>>> 3
+
+for (i <- 1 until 10) // note: 'until' is non-inclusive
+  println(i)
+>>> 1
+>>> 2
+```
 ## MySQL
 
 ## Apache Spark
