@@ -31,8 +31,6 @@
       - [Procedures \& Functions](#procedures--functions)
   - [Apache Kafka](#apache-kafka)
   - [Apache Flink](#apache-flink)
-  - [Databricks (coming soon)](#databricks-coming-soon)
-  - [Kubernetes (coming soon)](#kubernetes-coming-soon)
 
 ## CLI & Vim
 ## Git
@@ -685,7 +683,3 @@ print(calculateSum(1,2,3,4,5))
 ## Apache Kafka
 
 ## Apache Flink
-
-## Databricks (coming soon)
-
-## Kubernetes (coming soon)
