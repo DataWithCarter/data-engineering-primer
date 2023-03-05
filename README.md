@@ -11,14 +11,16 @@
 * [CLI & Vim](#cli-vim)
 * [Git](#git)
 * [Python](#python)
-* [Scala](#scala)
 * [MySQL](#mysql)
 * [Apache Spark](#apache-spark)
 * [Apache Airflow](#apache-airflow)
+* [Great Expectations](#great-expectations)
+* [Data Build Tool](#dbt)
+* [Scala](#scala)
 * [Apache Kafka](#apache-kafka)
 * [Apache Flink](#apache-flink)
 * [Amazon Web Services (AWS)](#aws)
-* [Build a Data Pipeline Project](#data-pipeline-project)
+* [Databricks](#databricks)
 
 ## Python
 #### Variables:
