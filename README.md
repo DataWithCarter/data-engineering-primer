@@ -474,6 +474,24 @@ val val1 = "I cannot be changed!"a # immutable
 println("Hello, Everyone!")
 >>> "Hello, Everyone"
 ```
+#### Conditional Statements
+```scala
+// Standard if-else statement
+if ((score >= 500) || (score <= 100)) { // the curly braces aren't necessary!!
+  println("You won the grand prize!")
+}
+else if ((score >= 200) && (score <= 400)) {
+  println("You won a prize!!")
+}
+else {
+  println("Try again!")
+}
+
+// One line if-else (like java ternary operator)
+val score = 300
+var result = if (score >= 250) "You won!" else "Try again!"
+>>> "You won!"
+```
 ## MySQL
 
 ## Apache Spark
