@@ -30,6 +30,61 @@ x, y = 1, False
 x = y = 1
 ```
 
+#### Functions:
+```py
+def addOne(num):
+  newNum = num + 1
+  return newNum
+
+addOne(1) # returns 2
+```
+
+#### Conditional Statements:
+```py
+# Standard If Statement
+if num = 1:
+  # ...
+elif num == 2:
+  # ...    
+else:
+  # ...
+
+# Check within a given range
+if 1 <= num <= 2:
+  # ...
+
+# One-liners
+result = 1000 if score >= 100 else 5
+
+# Switch-Case
+match score:
+  case 1000:
+    print("Yay you got a score of precisely 1000!")
+  case 500:
+    print("Woah you got a score of exactly 500!")
+  case _: # Default Case
+    print("Your score was neither 1000 nor 500. Try again!")
+```
+
+#### Loops:
+```py
+# while-loop
+i = 0
+while i < 10:
+  i += 1
+
+# standard for-loops
+for i in range(5): # note end amount is non-inclusive
+  print(i) # 0, 1, 2, 3, 4
+
+for i in range(2, 5): # note start amount is inclusive
+  print(i) # 2, 3, 4
+
+# iterate backwards
+for i in range(3, -1, -1): # define start, end (non-inclusive), decrement amount
+  print(i) # 3, 2, 1, 0
+```
+
 #### Strings (Immutable):
 ```py
 s = "Hello"
@@ -75,15 +130,30 @@ format(3,'b')
 ```py
 # Initialize
 arr = [0, 1, 2, 3, 4]
-arr = [0] * 5 # [0, 0, 0, 0, 0]
+>>> [0, 1, 2, 3, 4]
 
-# Initialize with List comprehension
-arr = [i for i in range(5)] # [0, 1, 2, 3, 4]
-arr = [[0] * 3 for i in range(4)] #  [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]] <--- 2-D array
+arr = [0] * 5
+>>> [0, 0, 0, 0, 0]
 
 # Get length
 arr = [0, 1, 2, 3, 4]
-length = len(arr) # length = 5
+length = len(arr)
+>>> 5
+
+# Initialize 1-D Array with List comprehension
+arr = [i for i in range(5)]
+>>> [0, 1, 2, 3, 4]
+
+# Initialize 2-D Array with List comprehension 
+arr = [[0] * 3 for i in range(4)] 
+>>> [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+# Get column and row length
+rows = len(arr)
+>>> 4
+
+cols = len(arr[0])
+>>> 3
 
 # Add/ Remove
 arr = [0, 1, 2, 3, 4]
@@ -119,6 +189,44 @@ arr.sort(key=lambda x: - len(x)) # ['ccc', 'bb', 'a'] <-- add a '-' to do it in 
  
 arr = [[1, 2], [5, 4], [1, 4]]
 arr.sort(key=lambda x: (-x[0], x[1])) # [[5, 4], [1, 2], [1, 4]]
+
+# Check if value is in a list
+if name in ['john', 'cathy', 'diego']:
+  # ...
+
+# Compare lists
+arr1, arr2 = [1, 2, 3], [2, 3, 4]
+if arr1 == [1, 2, 3]:
+  return True
+elif arr1 == arr2:
+  return False
+
+# array with for-loop
+nums = [10, 20, 30]
+for i in range(len(nums)):
+  print(nums[i]) # 10, 20, 30
+
+# array backwards with for-loop
+nums = [10, 20, 30]
+for i in range(len(nums) -1, -1, -1):
+  print(nums[i]) # 30, 20, 10
+
+# for-each loop
+for num in [10, 20, 30]: # you can swap this with a reference to an array
+  print(num) # 10, 20, 30
+
+# for-each loop with current index
+for i, num in enumerate([10, 20, 30]):
+  print(i, num) # 0 10, 1 20, 2 30
+
+# zip - look at 2+ arrays at a time
+for num1, num2 in zip([0, 1, 2], [0, 100, 200, 300]):
+  print(num1, num2) # 0 0, 1 100, 2 200 <-- note: it won't print 300 as its bounded by shortest array length.
+  
+# look at columns in 2-d array or array of strings:
+stringArr = ["abc", "123", "xyz"]
+for l1, l2, l3 in zip(*stringArr):
+  print(l1, l2, l3) # a 1 x, b 2 y, c 3 z
 ```
 
 #### HashMap
@@ -135,6 +243,7 @@ len(nameToAge)
 # Check if key is in hashmap
 if 'Murray' not in nameToAge:
   nameToAge['Murray'] = 60
+>>> {'Diego': 32, 'Evelyn': 22, 'Jayden': 45, 'Murray': 60}
 
 # Build HashMap with dict comprehension
 hm = { i:i*10 for i in range(10) if i % 2 == 0}
@@ -312,90 +421,6 @@ hs.add((1,2))
 hs.add((1,3))
 print(hs)
 >>> {(1, 1), (1, 2), (1, 3)}
-```
-
-#### Functions:
-```py
-def addOne(num):
-  newNum = num + 1
-  return newNum
-
-addOne(1) # returns 2
-```
-
-#### Conditional Statements:
-```py
-# Standard If Statement
-if num = 1:
-  # ...
-elif num == 2:
-  # ...    
-else:
-  # ...
-
-# Check within a given range
-if 1 <= num <= 2:
-  # ...
-
-# Check if value is in a list
-if name in ['john', 'cathy', 'diego']:
-  # ...
-
-# Compare lists
-arr1, arr2 = [1, 2, 3], [2, 3, 4]
-if arr1 == [1, 2, 3]:
-  return True
-elif arr1 == arr2:
-  return False
-
-# One-liners
-result = 1000 if score >= 100 else 5
-
-# Switch-Case
-match score:
-  case 1000:
-    print("Yay you got a score of precisely 1000!")
-  case 500:
-    print("Woah you got a score of exactly 500!")
-  case _: # Default Case
-    print("Your score was neither 1000 nor 500. Try again!")
-```
-
-#### Loops:
-```py
-# while-loop
-i = 0
-while i < 10:
-  i += 1
-
-# standard for-loops
-for i in range(5):
-  print(i) # 0, 1, 2, 3, 4
-
-for i in range(2, 5):
-  print(i) # 2, 3, 4
-
-# backwards for-loop
-nums = [10, 20, 30]
-for i in range(len(nums) -1, -1, -1):
-  print(nums[i]) # 30, 20, 10
-
-# for-each loop
-for num in [10, 20, 30]:
-  print(num) # 10, 20, 30
-
-# for-each loop with current index
-for i, num in enumerate([10, 20, 30]):
-  print(i, num) # 0 10, 1 20, 2 30
-
-# zip - look at 2+ arrays at a time
-for num1, num2 in zip([0, 1, 2], [0, 100, 200, 300]):
-  print(num1, num2) # 0 0, 1 100, 2 200 <-- note: it won't print 300 as its bounded by shortest array length.
-  
-# look at columns in 2-d array or array of strings:
-stringArr = ["abc", "123", "xyz"]
-for l1, l2, l3 in zip(*stringArr):
-  print(l1, l2, l3) # a 1 x, b 2 y, c 3 z
 ```
 
 #### Classes:
