@@ -525,6 +525,24 @@ for (i <- 1 until 10) // note: 'until' is non-inclusive
 >>> 1
 >>> 2
 ```
+#### Lists
+```scala
+// create a list
+var myList = List(1, 2, 3)
+
+// for-each loop
+for (num <- myList)
+  println(num)
+>>> 1
+>>> 2
+>>> 3
+
+// create a list with for-each loop & conditional statements
+var evenList = for { i <- 1 to 20 
+  if (i % 2) == 0  
+  } yield i
+>>> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+```
 ## MySQL
 
 ## Apache Spark
