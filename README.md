@@ -1,12 +1,4 @@
 # The Data Engineering Primer
-## Motivation
-
-> Teach you enough python/ scala/ sql so you can routinely practice leetcode questions
->
-> Equip you with the fundamentals of popular data engineering tools
-> 
-> To be your project partner throughout a Data Engineering project!
-
 ## Index:
 * [CLI & Vim](#cli-vim)
 * [Git](#git)
@@ -14,14 +6,14 @@
 * [MySQL](#mysql)
 * [Apache Spark](#apache-spark)
 * [Apache Airflow](#apache-airflow)
+* [Amazon Web Services (AWS)](#aws)
 * [Great Expectations](#great-expectations)
 * [Data Build Tool](#dbt)
 * [Scala](#scala)
 * [Apache Kafka](#apache-kafka)
 * [Apache Flink](#apache-flink)
-* [Amazon Web Services (AWS)](#aws)
 * [Databricks](#databricks)
-
+* [Kubernetes](#kubernetes)
 ## Python
 #### Variables:
 ```py
