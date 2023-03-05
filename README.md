@@ -1,19 +1,40 @@
 # The Data Engineering Primer
-## Index:
-* [CLI & Vim](#cli-vim)
-* [Git](#git)
-* [Python](#python)
-* [MySQL](#mysql)
-* [Apache Spark](#apache-spark)
-* [Apache Airflow](#apache-airflow)
-* [Amazon Web Services (AWS)](#aws)
-* [Great Expectations](#great-expectations)
-* [Data Build Tool](#dbt)
-* [Scala](#scala)
-* [Apache Kafka](#apache-kafka)
-* [Apache Flink](#apache-flink)
-* [Databricks](#databricks)
-* [Kubernetes](#kubernetes)
+- [The Data Engineering Primer](#the-data-engineering-primer)
+  - [CLI \& Vim](#cli--vim)
+  - [Git](#git)
+  - [Python](#python)
+      - [Variables:](#variables)
+      - [Functions:](#functions)
+      - [Conditional Statements:](#conditional-statements)
+      - [Loops:](#loops)
+      - [Strings (Immutable):](#strings-immutable)
+      - [Arrays:](#arrays)
+      - [HashMap](#hashmap)
+      - [HashSet](#hashset)
+      - [Double Ended Queue (FIFO):](#double-ended-queue-fifo)
+      - [Stacks (LIFO):](#stacks-lifo)
+      - [Heaps:](#heaps)
+      - [Tuples (Immutable)](#tuples-immutable)
+      - [Classes:](#classes)
+  - [MySQL](#mysql)
+  - [Apache Spark (PySpark)](#apache-spark-pyspark)
+  - [Apache Airflow](#apache-airflow)
+  - [Amazon Web Services (AWS)](#amazon-web-services-aws)
+  - [Great Expecations](#great-expecations)
+  - [Data Build Tool (DBT)](#data-build-tool-dbt)
+  - [Scala](#scala)
+      - [The Fundamentals: variables, comments, printing, and math :D](#the-fundamentals-variables-comments-printing-and-math-d)
+      - [Conditional Statements](#conditional-statements-1)
+      - [Loops](#loops-1)
+      - [Lists](#lists)
+      - [Functions](#functions-1)
+  - [Apache Kafka](#apache-kafka)
+  - [Apache Flink](#apache-flink)
+  - [Databricks](#databricks)
+  - [Kubernetes](#kubernetes)
+
+## CLI & Vim
+## Git
 ## Python
 #### Variables:
 ```py
@@ -448,6 +469,18 @@ scooby.speak()
 >>> Scooby-Doo says: Scooby Doobie Doooo I'm 8 years old!
 ```
 
+## MySQL
+
+## Apache Spark (PySpark)
+
+## Apache Airflow
+
+## Amazon Web Services (AWS)
+
+## Great Expecations
+
+## Data Build Tool (DBT)
+
 ## Scala
 #### The Fundamentals: variables, comments, printing, and math :D
 Scala can automatically figure out what data type your variable is based on what type of data you're storing in the variable. 
@@ -542,4 +575,54 @@ var evenList = for { i <- 1 to 20
   if (i % 2) == 0  
   } yield i
 >>> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+// Nested for-loop (this is honestly super interesting)
+for ( i <- 1 to 3; j <- 7 to 9) 
+  println("i: " + i +", j: " + j)
+>>> i: 1, j: 7 
+>>> i: 1, j: 8 
+>>> i: 1, j: 9 
+>>> i: 2, j: 7 
+>>> i: 1, j: 8 
+>>> i: 2, j: 9 
+>>> i: 3, j: 7 
+>>> i: 1, j: 8 
+>>> i: 3, j: 9 
+
+// break does not exist in scala
+// instead put loop in function and use 'return' instead of break
+def exampleFunction() {
+  for ( i <- 1 to 10) {
+    if (i == 5) {
+      return // workaround to break out of loop
+    }
+  }
+}
+exampleFunction() // call function
+
+// coninue does not exist in scala as well...
+// instead just don't invert the boolean logic and perform other logic in if statement
+for ( i <- 1 to 10) {
+  if (i == 5) { // workaround for 'if i != 5 then continue'
+    // do something ...
+  }
+}
+
 ```
+
+#### Functions
+```scala
+def doSomething() {
+  println("I'm doing something!!")
+}
+
+doSomething()
+```
+
+## Apache Kafka
+
+## Apache Flink
+
+## Databricks
+
+## Kubernetes
