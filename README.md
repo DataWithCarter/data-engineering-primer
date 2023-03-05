@@ -21,9 +21,8 @@
   - [MySQL](#mysql)
   - [Apache Spark (PySpark)](#apache-spark-pyspark)
   - [Apache Airflow](#apache-airflow)
-  - [Amazon Web Services (AWS)](#amazon-web-services-aws)
   - [Great Expectations](#great-expecations)
-  - [Data Build Tool (DBT)](#data-build-tool-dbt)
+  - [Amazon Web Services (AWS)](#amazon-web-services-aws)
   - [Scala](#scala)
       - [Variables \& Math](#variables--math-1)
       - [Conditional Statements](#conditional-statements-1)
@@ -504,8 +503,6 @@ scooby.speak()
 ## Amazon Web Services (AWS)
 
 ## Great Expectations
-
-## Data Build Tool (DBT)
 
 ## Scala
 #### Variables & Math
