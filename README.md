@@ -1,7 +1,7 @@
 # The Data Engineering Primer
 - [The Data Engineering Primer](#the-data-engineering-primer)
-  - [CLI, \& Vim, \& Git](#cli-vim-git)
-      - [Command Line](#cli)
+  - [CLI, Vim, \& Git](#cli-vim--git)
+      - [Command Line](#command-line)
       - [Vim as a text editor](#vim-as-a-text-editor)
       - [Git](#git)
   - [Python](#python)
@@ -22,7 +22,7 @@
   - [Apache Spark (PySpark)](#apache-spark-pyspark)
   - [Apache Airflow](#apache-airflow)
   - [Amazon Web Services (AWS)](#amazon-web-services-aws)
-  - [Great Expecations](#great-expecations)
+  - [Great Expectations](#great-expecations)
   - [Data Build Tool (DBT)](#data-build-tool-dbt)
   - [Scala](#scala)
       - [Variables \& Math](#variables--math-1)
@@ -37,7 +37,7 @@
 ## CLI, Vim, & Git
 #### Command Line
 
-**Vim Terminal Command**
+#### Vim as a text editor
 Another popular terminal command is `vim`.
 
 Vim allows you to update and modify your files in the command line! Just navigate to the file you want to update and type `vim file_name.<file-extension>`. If that file doesn't exist in that directory it'll create it!
@@ -46,19 +46,18 @@ Now this is where things get messy. This a ton of memes about not being able to 
 `wq!` to save and exit
 `q!` to exit without saving
 
-There's a ton you can do with vim and I recommended learning by:
+**How to Learn:**
 1. Typing `vimtutor` in your command line and following it's how to :) (this is how I learned it at first!!)
 2. Watch Free Code Camp's 1 hour Vim tutorial!
 3. Of course anything that looks helpful to you and appears beginner friendly!
 
-#### Vim as a text editor
-What you'll soon come to find is that vim is not only to update files in the command-line. 
+What you'll quickly come to find is **vim is not only to update files in the command-line.**
 
-It's actually an incredibly powerful text editor that you can use in your favourite IDEs (i.e., VSCode) and even on LeetCode and a lot of other coding sites! There's even a community of developers who choose to only use replace IDEs entirely with VIM (along with many open-source plugins to make VIM even more powerful).
+It's actually an incredibly powerful text editor that you can use in your favourite IDEs (i.e., **VSCode**) and even on **LeetCode** and a lot of other coding sites! There's even a community of developers who choose to only use replace IDEs entirely with VIM (along with many open-source plugins to make VIM even more powerful).
 
-I learned VIM simply by practicing one or two new key shortcuts on LeetCode everyday (they have a VIM setting you can turn on). It adds up trust me!!
+I learned VIM simply by practicing one or two new key shortcuts on **LeetCode** everyday (they have a VIM setting you can turn on). It adds up trust me!!
 
-It's totally not necessary to dive deep into vim. I just wished I had known earlier it can be used to save you a ton of time with all of its key shortcuts!
+**It's totally not necessary to dive deep into vim.** I just wished I had known earlier it can be used to save you a ton of time with all of its key shortcuts!
 
 #### Git
 
@@ -504,7 +503,7 @@ scooby.speak()
 
 ## Amazon Web Services (AWS)
 
-## Great Expecations
+## Great Expectations
 
 ## Data Build Tool (DBT)
 
