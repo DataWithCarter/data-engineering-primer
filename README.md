@@ -14,6 +14,9 @@
       - [Heaps](#heaps)
       - [Tuples (Immutable)](#tuples-immutable)
       - [Classes](#classes)
+      - [Algorithms](#algorithms)
+      - [OOP](#oop)
+      - [Design Patterns](#design-patterns)
   - [MySQL](#mysql)
   - [Apache Spark (PySpark)](#apache-spark-pyspark)
   - [Apache Airflow](#apache-airflow)
@@ -452,6 +455,12 @@ scooby.incrementAge(7)
 scooby.speak()
 >>> Scooby-Doo says: Scooby Doobie Doooo I'm 8 years old!
 ```
+
+#### Algorithms
+
+#### OOP
+
+#### Design Patterns
 
 ## MySQL
 
