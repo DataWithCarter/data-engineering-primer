@@ -30,7 +30,7 @@
       - [Lists](#lists)
       - [Procedures \& Functions](#procedures--functions)
   - [Apache Kafka](#apache-kafka)
-  - ClickHouse(#clickhouse
+  - ClickHouse(#clickhouse)
   - [Cassandra](#redis)
   - [Redis](#redis)
   - [Kubernetes](#kubernetes)
