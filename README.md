@@ -22,7 +22,6 @@
   - [Apache Spark (PySpark)](#apache-spark-pyspark)
   - [Apache Airflow](#apache-airflow)
   - [Great Expectations](#great-expecations)
-  - [Amazon Web Services (AWS)](#amazon-web-services-aws)
   - [Scala](#scala)
       - [Variables \& Math](#variables--math-1)
       - [Conditional Statements](#conditional-statements-1)
@@ -31,8 +30,9 @@
       - [Lists](#lists)
       - [Procedures \& Functions](#procedures--functions)
   - [Apache Kafka](#apache-kafka)
-  - [Apache Flink](#apache-flink)
-
+  - [Cassandra](#redis)
+  - [Redis](#redis)
+  - [Kubernetes](#kubernetes)
 ## CLI, Vim, & Git
 #### Command Line
 
