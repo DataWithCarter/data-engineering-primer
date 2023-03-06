@@ -1,19 +1,7 @@
 # The Data Engineering Primer
 - [The Data Engineering Primer](#the-data-engineering-primer)
   - [Python](#python)
-      - [Variables \& Math](#variables--math)
-      - [Functions](#functions)
-      - [Conditional Statements](#conditional-statements)
-      - [Loops](#loops)
-      - [Strings (Immutable)](#strings-immutable)
-      - [Arrays](#arrays)
-      - [HashMap](#hashmap)
-      - [HashSet](#hashset)
-      - [Double Ended Queue (FIFO)](#double-ended-queue-fifo)
-      - [Stacks (LIFO)](#stacks-lifo)
-      - [Heaps](#heaps)
-      - [Tuples (Immutable)](#tuples-immutable)
-      - [Classes](#classes)
+      - [Syntax](#syntax)
       - [Algorithms](#algorithms)
       - [OOP](#oop)
       - [Design Patterns](#design-patterns)
@@ -21,8 +9,12 @@
   - [Apache Spark (PySpark)](#apache-spark-pyspark)
   - [Apache Airflow](#apache-airflow)
   - [Great Expectations](#great-expectations)
-  - [Amazon Web Services (AWS)](#amazon-web-services-(aws))
+  - [Amazon Web Services](#amazon-web-services)
+  - [Data Modeling](#data-modeling)
+  - [System Design](#system-design)
+  - [Data Pipeline Design](#data-pipeline-design)
 ## Python
+### Syntax
 #### Variables & Math
 ```py
 # method 1: single assignment
@@ -470,4 +462,10 @@ scooby.speak()
 
 ## Great Expectations
 
-## Amazon Web Services (AWS)
+## Amazon Web Services
+
+## Data Modeling
+
+## System Design
+
+## Data Pipeline Design
