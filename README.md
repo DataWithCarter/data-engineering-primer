@@ -8,8 +8,7 @@
   - [MySQL](#mysql)
   - [Apache Spark (PySpark)](#apache-spark-pyspark)
   - [Apache Airflow](#apache-airflow)
-  - [Great Expectations](#great-expectations)
-  - [Amazon Web Services](#amazon-web-services)
+  - [Apache Kafka](#apache-kafka)
   - [Data Modeling](#data-modeling)
   - [System Design](#system-design)
   - [Data Pipeline Design](#data-pipeline-design)
@@ -460,68 +459,7 @@ scooby.speak()
 
 ## Apache Airflow
 
-## Great Expectations
-
-## Amazon Web Services
-### S3
-S3 CLI Commands:
-``` 
-# Copy Files to S3 (so its stored localy and in s3)
-aws s3 cp <file_to_upload> s3://<s3-bucket-name>
-
-# Move a file to S3 (so its only stored in s3)
-aws mv <file_to_move> s3://<s3-bucket-name>
-
-# Get objects stored in s3
-aws s3 ls <s3-bucket-name) # note doesn't require "s3://" prefix
-
-# Only moves files that are not already store in our bucket
-# Detects the last modified tag of the file to see if it's been updated
-aws s3 sync . s3://<s3-bucket-name>
-
-# Copy files to your current directory
-aws s3 sync s3://<s3-bucket-name> .
-```
-
-#### Cloudfront & S3 Transfer Acceleration:
-These services enable users to use optimised network links to send & receive data from edge locations geo-located near them. 
-
-Say we have an application with data stored in the `us-east-1` region. This will work great initially with a modest amount of users located near that region. 
-
-However, as we scale and aquire a greater number of daily active users as well as users further away from that region we will start to see increased latency.
-
-One way to handle this is to use Amazon's global CDN called **CloudFront**. This will enable us to allow our users to **read** data from our s3 bucket faster and distribute the load more evenly. Cloudfront's caching nodes have an optimized network path between them which helps transfer the data from our S3 bucket into the caching nodes. However, if a requested object is not already cached in cloudfront it may take a while - but at least it has access to those optimized network paths. 
-
-To help scale our **writes** to our bucket we can reduce upload latency/ failures we can make use of **Transfer Acceleration**. This will make use of the same caching nodes & optimised network path but in this case it acts as a "Content Ingestion Network" which helps our upload. Aditional Costs are: $0.04/GB in USA, Europe, & Japan and $0.08 in all other edge locations.
-
-#### S3 Multipart Upload
-This is how to handle uploading a large file. 
-
-Currently a single s3 put request is limited to 5GiB. However, an S3 object can be up to 5TiB. This is how we upload an s3 bucket up to that 5TiB limit.
-
-Like a large building we will need to prepare our data into easily moveable chunks and re-assemble the data at our destination. S3 abstracts this process away from us. We just have to tell s3 the order in which we want the file to go in (s3 will put it back together for us). 
-
-3 Multipart Upload API Calls:
-`CreateMultipartUpload` API Call: 
-- Returns Bucket, Key, & UploadID
-
-`UploadPart` API Call:
-- Requires Bucket, Key, Part Number, & UploadID
-- Returns an ETag
-
-`CompleteMultipartUpload`
-- Provide Bucket, Key, UploadId, all part numbers, all ETags
-- Returns Bucket, ETag, & Key
-
-Notes:
-- We can only have up to 10k parts. 
-- Specifying the same part number as previously uploaded can be utilized to overwrite that previous part. 
-- A bucket lifecycle policy can be used to automatically abort mutipart uploads after a desired length of time. 
-
-Considerations:
-- Recommended to use Multipart Upload for files larger than 100MiB
-- All parts except the final part must be >= 5MiB
-- Therefore, parts should be between 5MiB - 100MiB
+## Apache Kafka
 
 ## Data Modeling
 
