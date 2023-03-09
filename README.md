@@ -6,12 +6,11 @@
       - [OOP](#oop)
       - [Design Patterns](#design-patterns)
   - [MySQL](#mysql)
-  - [Apache Spark (PySpark)](#apache-spark-pyspark)
-  - [Apache Airflow](#apache-airflow)
-  - [Apache Kafka](#apache-kafka)
+  - [Batch Processing with Apache Spark (PySpark)](#apache-spark-pyspark)
+  - [Job Orchestration with Apache Airflow](#apache-airflow)
+  - [Stream Processing with Apache Kafka](#apache-kafka)
   - [Data Modeling](#data-modeling)
   - [System Design](#system-design)
-  - [Data Pipeline Design](#data-pipeline-design)
 ## Python
 ### Syntax
 #### Variables & Math
@@ -455,14 +454,12 @@ scooby.speak()
 
 ## MySQL
 
-## Apache Spark (PySpark)
+## Batch Processing with Apache Spark
 
-## Apache Airflow
+## Job Orchestration with Apache Airflow
 
-## Apache Kafka
+## Stream Processing with Apache Kafka
 
 ## Data Modeling
 
 ## System Design
-
-## Data Pipeline Design
