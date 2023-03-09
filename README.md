@@ -1,4 +1,4 @@
-# The Data Engineering Primer
+# Data Engineering Primer
 - [The Data Engineering Primer](#the-data-engineering-primer)
   - [Python](#python)
       - [Syntax](#syntax)
@@ -6,11 +6,9 @@
       - [OOP](#oop)
       - [Design Patterns](#design-patterns)
   - [MySQL](#mysql)
-  - [Batch Processing with Apache Spark](#apache-spark)
-  - [Job Orchestration with Apache Airflow](#apache-airflow)
-  - [Stream Processing with Apache Kafka](#apache-kafka)
-  - [Data Modeling](#data-modeling)
-  - [System Design](#system-design)
+  - [Apache Spark](#apache-spark)
+  - [Apache Airflow](#apache-airflow)
+  - [Apache Kafka](#apache-kafka)
 ## Python
 ### Syntax
 #### Variables & Math
@@ -454,12 +452,9 @@ scooby.speak()
 
 ## MySQL
 
-## Batch Processing with Apache Spark
+## Apache Spark
 
-## Job Orchestration with Apache Airflow
+## Apache Airflow
 
-## Stream Processing with Apache Kafka
+## Apache Kafka
 
-## Data Modeling
-
-## System Design
