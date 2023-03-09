@@ -6,7 +6,7 @@
       - [OOP](#oop)
       - [Design Patterns](#design-patterns)
   - [MySQL](#mysql)
-  - [Batch Processing with Apache Spark (PySpark)](#apache-spark-pyspark)
+  - [Batch Processing with Apache Spark](#apache-spark)
   - [Job Orchestration with Apache Airflow](#apache-airflow)
   - [Stream Processing with Apache Kafka](#apache-kafka)
   - [Data Modeling](#data-modeling)
